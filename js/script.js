@@ -12,11 +12,13 @@ function() {
     } else if (i%5 == 0) array[i-1] = ("Buzz");
 
     else array[i-1] = i;
+
+    document.getElementById('list').innerHTML += "<li>" + array[i - 1] + "</li>";
   }
 
-  for (var i = 0; i < 100; i++) {
-    document.getElementById('list').innerHTML += "<li>" + array[i] + "</li>";
-  }
+
+
+
 
   document.getElementById('btn').className = "hidden";
   document.getElementById('list').className = "show";
