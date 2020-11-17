@@ -15,11 +15,7 @@ function() {
 
     document.getElementById('list').innerHTML += "<li>" + array[i - 1] + "</li>";
   }
-
-
-
-
-
+  
   document.getElementById('btn').className = "hidden";
   document.getElementById('list').className = "show";
 })
