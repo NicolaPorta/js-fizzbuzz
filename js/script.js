@@ -14,5 +14,5 @@ for (var i = 1; i < 101; i++) {
 var stamp = document.getElementById('list');
 
 for (var i = 0; i < 100; i++) {
-  stamp.innerHTML += "<li>- " + array[i] + "</li>";
+  stamp.innerHTML += "<li>" + array[i] + "</li>";
 }
