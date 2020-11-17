@@ -1,18 +1,19 @@
+var stamp = document.getElementById('list');
 document.getElementById('btn').addEventListener("click",
 function() {
   for (var i = 1; i < 101; i++) {
 
     if (i%3 == 0) {
 
-      if (i%5 == 0) document.getElementById('list').innerHTML += "<li>FizzBuzz</li>";
+      if (i%5 == 0) stamp.innerHTML += "<li>FizzBuzz</li>";
 
-      else  document.getElementById('list').innerHTML += "<li>Fizz</li>";;
+      else  stamp.innerHTML += "<li>Fizz</li>";
 
-    } else if (i%5 == 0) document.getElementById('list').innerHTML += "<li>Buzz</li>";
+    } else if (i%5 == 0) stamp.innerHTML += "<li>Buzz</li>";
 
-    else document.getElementById('list').innerHTML += "<li>" + i + "</li>";
+    else stamp.innerHTML += "<li>" + i + "</li>";
   }
 
   document.getElementById('btn').className = "hidden";
-  document.getElementById('list').className = "show";
+  stamp.className = "show";
 })
